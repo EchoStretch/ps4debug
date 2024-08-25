@@ -31,4 +31,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create ps4debug-1.0${{ github.run_number }} PS4Debug.bin --target ${{ github.sha }} -t ps4debug-1.0${{ github.run_number }}
+          gh release create ps4debug-1.0${{ github.run_number }} ps4debug.bin --target ${{ github.sha }} -t ps4debug-1.0${{ github.run_number }}
