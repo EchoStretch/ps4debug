@@ -10,7 +10,7 @@
 #include "net.h"
 
 #include "proc.h"
-#include "debug.h"
+#include "ddebug.h"
 #include "kern.h"
 #include "console.h"
 
