@@ -26,3 +26,9 @@ If you want to contribute, then feel free to make a pull request or open an issu
 - idc
 - zecoxao
 - DeathRGH - For second [ptrace](https://github.com/GiantPluto/ps4debug/blob/457c2bf5468329e68a272b5f1e1ab88957f5f2d8/installer/source/installer.c#L53) patch for 6.72
+
+## Credits
+- [jogolden](https://github.com/jogolden/ps4debug) - for originally creating this
+- [DeathRGH](https://github.com/DeathRGH/frame4) - for multi fw example
+- [BestPig](https://github.com/BestPig) - Help with offsets
+- [EchoStretch](https://github.com/EchoStretch/ps4debug) - Putting it all together
