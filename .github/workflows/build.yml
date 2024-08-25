@@ -3,10 +3,10 @@ name: ps4debug Payload
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@master
         with:
           submodules: recursive # Ensure submodules are checked out
 
@@ -27,7 +27,7 @@ jobs:
         run: ./build.sh
 
       - name: Release for branch main
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
